@@ -9,7 +9,9 @@ define_timeout(1)
 # [Global modemap] Change modifier keys as in xmodmap
 define_modmap({
     Key.CAPSLOCK: Key.LEFT_CTRL,
-    Key.LEFT_META: Key.RIGHT_META,  #Key.LEFT_CTRL,
+    # Refer:
+    # https://qiita.com/junkoda/items/fc414a11f418766004f0#4-configpy-%E3%82%92%E7%B7%A8%E9%9B%86%E3%81%99%E3%82%8B
+    Key.LEFT_META: Key.RIGHT_META,
 })
 
 # [Conditional modmap] Change modifier keys in certain applications
